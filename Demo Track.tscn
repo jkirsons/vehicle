@@ -1,0 +1,121 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Car.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.0431373, 0.768627, 0, 1 )
+metallic = 1.0
+uv1_scale = Vector3( 55, 55, 1 )
+
+[sub_resource type="PlaneMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 100, 100 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, -50 )
+
+[sub_resource type="Curve3D" id=6]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036, 1.38595, 0, -5.40973, -1.38595, 0, 5.40973, -2.92696, 0, 26.7756, 4.41615, 0, -5.23954, -4.41615, 0, 5.23954, -19.4756, 0, 55.67, 5.11638, 0, -2.00072, -5.11638, 0, 2.00072, -38.651, 0, 69.3292, 9.46289, 0, 3.60492, -9.46289, 0, -3.60492, -86.4817, 0, 69.5815, 3.2682, 0, 6.99522, -3.2682, 0, -6.99522, -104.845, 0, 45.6883, 1.60216, 0, 4.3797, -1.60216, 0, -4.3797, -124.809, 0, 10.227, -0.393677, 0, 16.7433, 0.393677, 0, -16.7433, -132.952, 0, -30.7506, 0, 0, 0, 0, 0, 0, -115.878, 0, -60.1703, -5.95848, 0, 3.11747, 5.95848, 0, -3.11747, -89.0848, 0, -77.507, -7.21057, 0, 3.14577, 7.21057, 0, -3.14577, -54.938, 0, -93.5321, -6.13807, 0, 0.321625, 6.13807, 0, -0.321625, -22.8904, 0, -102.199, -6.36373, 0, -0.692802, 6.36373, 0, 0.692802, 30.9583, 0, -102.987, -14.1609, 0, -5.83204, 14.1609, 0, 5.83204, 104.77, 0, -95.369, -2.84078, 0, -7.54234, 2.84078, 0, 7.54234, 129.725, 0, -70.6774, 0.577271, 0, -5.77762, -0.577271, 0, 5.77762, 131.038, 0, -16.566, 4.09979, 0, -5.48991, -4.09979, 0, 5.48991, 120.531, 0, 19.4206, 13.5805, 0, -0.223301, -13.5805, 0, 0.223301, 91.8993, 0, 33.0798, 9.46288, 0, 12.3919, -9.46288, 0, -12.3919, 64.2486, 0, 19.7887, 0.9328, 0, 3.78867, -0.9328, 0, -3.78867, 47.7696, 0, -29.9625, 4.45644, 0, 4.85062, -4.45644, 0, -4.85062, 38.8386, 0, -69.1013, 12.0632, 0, -0.862228, -12.0632, 0, 0.862228, 15.4604, 0, -76.4563, 0.599008, 0, -3.14288, -0.599008, 0, 3.14288, -0.562871, 0, -62.0091, 0, 0, 0, 0, 0, 0, -0.825541, 0, -27.8611, 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+}
+
+[sub_resource type="CylinderMesh" id=4]
+top_radius = 0.5
+bottom_radius = 0.5
+height = 0.3
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 2, 0.8, 4 )
+
+[node name="World" type="Spatial"]
+
+[node name="Ground" type="MeshInstance" parent="."]
+editor/display_folded = true
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Ground"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="Track" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Path" type="Path" parent="Track"]
+curve = SubResource( 6 )
+
+[node name="CSGPolygon" type="CSGPolygon" parent="Track"]
+use_collision = true
+invert_faces = true
+polygon = PoolVector2Array( 10, 0, -10, 0, -10, -0.1, 10, -0.1 )
+mode = 2
+path_node = NodePath("../Path")
+path_interval = 7.345
+path_rotation = 2
+path_local = false
+path_continuous_u = false
+path_joined = true
+smooth_faces = true
+
+[node name="Car" type="VehicleBody" parent="."]
+editor/display_folded = true
+mass = 20.0
+script = ExtResource( 1 )
+MAX_ENGINE_FORCE = 50.0
+steer_speed = 0.5
+
+[node name="front_left" type="VehicleWheel" parent="Car"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 3 )
+use_as_steering = true
+suspension_stiffness = 50.0
+
+[node name="MeshInstance" type="MeshInstance" parent="Car/front_left"]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="front_right" type="VehicleWheel" parent="Car"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 3 )
+use_as_steering = true
+suspension_stiffness = 50.0
+
+[node name="MeshInstance2" type="MeshInstance" parent="Car/front_right"]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="rear_left" type="VehicleWheel" parent="Car"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -3 )
+use_as_traction = true
+suspension_stiffness = 50.0
+
+[node name="MeshInstance3" type="MeshInstance" parent="Car/rear_left"]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="rear_right" type="VehicleWheel" parent="Car"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -3 )
+use_as_traction = true
+suspension_stiffness = 50.0
+
+[node name="MeshInstance4" type="MeshInstance" parent="Car/rear_right"]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79914, 0 )
+shape = SubResource( 5 )
+
+[node name="Camera" type="Camera" parent="Car"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.528, -7.377 )
+current = true
+
