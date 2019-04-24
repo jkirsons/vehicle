@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Car.gd" type="Script" id=1]
+[ext_resource path="res://Camera.gd" type="Script" id=1]
+[ext_resource path="res://Car.gd" type="Script" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.0431373, 0.768627, 0, 1 )
@@ -26,7 +27,7 @@ bottom_radius = 0.5
 height = 0.3
 
 [sub_resource type="BoxShape" id=6]
-extents = Vector3( 1.7, 0.22, 4 )
+extents = Vector3( 2.07, 0.29, 4 )
 
 [sub_resource type="SpatialMaterial" id=7]
 albedo_color = Color( 0.439216, 0.439216, 0.439216, 1 )
@@ -40,6 +41,7 @@ size = Vector3( 3.4, 0.5, 8 )
 [node name="Ground" type="MeshInstance" parent="."]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.01, 0 )
+visible = false
 mesh = SubResource( 2 )
 material/0 = null
 
@@ -49,7 +51,7 @@ material/0 = null
 shape = SubResource( 3 )
 
 [node name="Track" type="Spatial" parent="."]
-editor/display_folded = true
+visible = false
 
 [node name="Path" type="Path" parent="Track"]
 curve = SubResource( 4 )
@@ -57,115 +59,117 @@ curve = SubResource( 4 )
 [node name="CSGPolygon" type="CSGPolygon" parent="Track"]
 use_collision = true
 invert_faces = true
-polygon = PoolVector2Array( 10, 0, -10, 0, -10, -0.1, 10, -0.1 )
+polygon = PoolVector2Array( 10, 0, -10, 0, -10, -0.5, 10, -0.5 )
 mode = 2
 path_node = NodePath("../Path")
-path_interval = 7.345
+path_interval = 2.199
 path_rotation = 2
 path_local = false
 path_continuous_u = false
 path_joined = true
 smooth_faces = true
 
-[node name="Car" type="VehicleBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.269461, 0 )
-mass = 122.449
-angular_damp = 0.0
+[node name="Camera2" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 150, -20 )
+current = true
+far = 200.0
 script = ExtResource( 1 )
-MAX_ENGINE_FORCE = 3000.0
-MAX_STEER_ANGLE = 0.4
-steer_speed = 10.0
+follow_this_path = NodePath("../Spatial/Car")
+target_distance = 10.0
 
-[node name="front_left" type="VehicleWheel" parent="Car"]
-editor/display_folded = true
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Car" type="VehicleBody" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.269461, 0 )
+mass = 58.1633
+angular_damp = 0.0
+script = ExtResource( 2 )
+MAX_STEER_ANGLE = 0.4
+
+[node name="front_left" type="VehicleWheel" parent="Spatial/Car"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.817685, 3 )
 use_as_steering = true
-wheel_roll_influence = 0.9
+wheel_roll_influence = 0.5
 wheel_radius = 0.51
 wheel_rest_length = 0.07
-wheel_friction_slip = 0.9
-suspension_travel = 0.07
-suspension_stiffness = 70.0
-suspension_max_force = 7000.0
-damping_compression = 0.5
+wheel_friction_slip = 10.0
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
 damping_relaxation = 0.8
 
-[node name="MeshInstance" type="MeshInstance" parent="Car/front_left"]
+[node name="MeshInstance" type="MeshInstance" parent="Spatial/Car/front_left"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="front_right" type="VehicleWheel" parent="Car"]
+[node name="front_right" type="VehicleWheel" parent="Spatial/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.817685, 3 )
 use_as_steering = true
-wheel_roll_influence = 1.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.51
 wheel_rest_length = 0.07
-wheel_friction_slip = 1.0
-suspension_travel = 0.07
-suspension_stiffness = 70.0
-suspension_max_force = 7000.0
-damping_compression = 0.5
+wheel_friction_slip = 10.0
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
 damping_relaxation = 0.8
 
-[node name="MeshInstance2" type="MeshInstance" parent="Car/front_right"]
+[node name="MeshInstance2" type="MeshInstance" parent="Spatial/Car/front_right"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="rear_left" type="VehicleWheel" parent="Car"]
+[node name="rear_left" type="VehicleWheel" parent="Spatial/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.817685, -3 )
 use_as_traction = true
-wheel_roll_influence = 1.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.51
 wheel_rest_length = 0.07
-wheel_friction_slip = 1.0
-suspension_travel = 0.07
-suspension_stiffness = 70.0
-suspension_max_force = 7000.0
-damping_compression = 0.5
-damping_relaxation = 0.8
+wheel_friction_slip = 9.0
+suspension_travel = 0.05
+suspension_stiffness = 130.0
+suspension_max_force = 2000.0
+damping_compression = 0.6
+damping_relaxation = 0.6
 
-[node name="MeshInstance3" type="MeshInstance" parent="Car/rear_left"]
+[node name="MeshInstance3" type="MeshInstance" parent="Spatial/Car/rear_left"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="rear_right" type="VehicleWheel" parent="Car"]
+[node name="rear_right" type="VehicleWheel" parent="Spatial/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.817685, -3 )
 use_as_traction = true
-wheel_roll_influence = 1.0
+wheel_roll_influence = 0.5
 wheel_radius = 0.51
 wheel_rest_length = 0.07
-wheel_friction_slip = 1.0
-suspension_travel = 0.07
-suspension_stiffness = 70.0
-suspension_max_force = 7000.0
-damping_compression = 0.5
-damping_relaxation = 0.8
+wheel_friction_slip = 9.0
+suspension_travel = 0.05
+suspension_stiffness = 130.0
+suspension_max_force = 2000.0
+damping_compression = 0.6
+damping_relaxation = 0.6
 
-[node name="MeshInstance4" type="MeshInstance" parent="Car/rear_right"]
+[node name="MeshInstance4" type="MeshInstance" parent="Spatial/Car/rear_right"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Car"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28199, 0 )
+[node name="CollisionShape" type="CollisionShape" parent="Spatial/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.302, 0 )
 shape = SubResource( 6 )
 
-[node name="Camera" type="Camera" parent="Car"]
+[node name="Camera" type="Camera" parent="Spatial/Car"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.528, -7.377 )
-current = true
 
-[node name="MeshInstance" type="MeshInstance" parent="Car"]
+[node name="MeshInstance" type="MeshInstance" parent="Spatial/Car"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24396, 0 )
 mesh = SubResource( 8 )
 material/0 = null
-
-[node name="Camera2" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 150, -20 )
-far = 200.0
 

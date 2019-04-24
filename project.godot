@@ -19,10 +19,6 @@ config/name="New Game Project"
 run/main_scene="res://Demo Track.tscn"
 config/icon="res://icon.png"
 
-[physics]
-
-3d/physics_engine="Bullet"
-
 [rendering]
 
 environment/default_environment="res://default_env.tres"
