@@ -1,92 +1,130 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=70 format=2]
 
-[ext_resource path="res://Camera.gd" type="Script" id=1]
+[ext_resource path="res://EditCamera.gd" type="Script" id=1]
 [ext_resource path="res://Car.gd" type="Script" id=2]
+[ext_resource path="res://Generator.gd" type="Script" id=3]
+[ext_resource path="res://Models/roadTile_001.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/roadTile_002.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Models/roadTile_003.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Models/roadTile_004.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Models/roadTile_005.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Models/roadTile_006.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Models/roadTile_007.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Models/roadTile_008.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Models/roadTile_009.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Models/roadTile_010.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Models/roadTile_011.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Models/roadTile_012.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Models/roadTile_013.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Models/roadTile_014.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Models/roadTile_015.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Models/roadTile_016.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Models/roadTile_017.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Models/roadTile_018.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Models/roadTile_019.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Models/roadTile_020.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Models/roadTile_021.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Models/roadTile_022.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Models/roadTile_023.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Models/roadTile_024.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Models/roadTile_025.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Models/roadTile_026.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Models/roadTile_027.obj" type="ArrayMesh" id=30]
+[ext_resource path="res://Models/roadTile_028.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Models/roadTile_029.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Models/roadTile_030.obj" type="ArrayMesh" id=33]
+[ext_resource path="res://Models/roadTile_031.obj" type="ArrayMesh" id=34]
+[ext_resource path="res://Models/roadTile_032.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Models/roadTile_033.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Models/roadTile_034.obj" type="ArrayMesh" id=37]
+[ext_resource path="res://Models/roadTile_035.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Models/roadTile_036.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Models/roadTile_037.obj" type="ArrayMesh" id=40]
+[ext_resource path="res://Models/roadTile_038.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Models/roadTile_039.obj" type="ArrayMesh" id=42]
+[ext_resource path="res://Models/roadTile_040.obj" type="ArrayMesh" id=43]
+[ext_resource path="res://Models/roadTile_041.obj" type="ArrayMesh" id=44]
+[ext_resource path="res://Models/roadTile_042.obj" type="ArrayMesh" id=45]
+[ext_resource path="res://Models/roadTile_043.obj" type="ArrayMesh" id=46]
+[ext_resource path="res://Models/roadTile_044.obj" type="ArrayMesh" id=47]
+[ext_resource path="res://Models/roadTile_045.obj" type="ArrayMesh" id=48]
+[ext_resource path="res://Models/roadTile_046.obj" type="ArrayMesh" id=49]
+[ext_resource path="res://Models/roadTile_047.obj" type="ArrayMesh" id=50]
+[ext_resource path="res://Models/roadTile_048.obj" type="ArrayMesh" id=51]
+[ext_resource path="res://Models/roadTile_049.obj" type="ArrayMesh" id=52]
+[ext_resource path="res://Models/roadTile_050.obj" type="ArrayMesh" id=53]
+[ext_resource path="res://Models/roadTile_051.obj" type="ArrayMesh" id=54]
+[ext_resource path="res://Models/roadTile_052.obj" type="ArrayMesh" id=55]
+[ext_resource path="res://Models/roadTile_053.obj" type="ArrayMesh" id=56]
+[ext_resource path="res://Models/roadTile_054.obj" type="ArrayMesh" id=57]
+[ext_resource path="res://Models/roadTile_055.obj" type="ArrayMesh" id=58]
+[ext_resource path="res://Models/roadTile_056.obj" type="ArrayMesh" id=59]
+[ext_resource path="res://Models/roadTile_057.obj" type="ArrayMesh" id=60]
+[ext_resource path="res://Models/roadTile_058.obj" type="ArrayMesh" id=61]
+[ext_resource path="res://Models/roadTile_059.obj" type="ArrayMesh" id=62]
+[ext_resource path="res://Models/roadTile_060.obj" type="ArrayMesh" id=63]
+[ext_resource path="res://GroundTile.gd" type="Script" id=64]
 
-[sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.0431373, 0.768627, 0, 1 )
-metallic = 1.0
-uv1_scale = Vector3( 55, 55, 1 )
-
-[sub_resource type="PlaneMesh" id=2]
-material = SubResource( 1 )
-size = Vector2( 1000, 1000 )
-
-[sub_resource type="ConvexPolygonShape" id=3]
-points = PoolVector3Array( 500, 0, 500, -500, 0, 500, 500, 0, -500, -500, 0, -500 )
-
-[sub_resource type="Curve3D" id=4]
+[sub_resource type="Curve3D" id=1]
 _data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036, 1.38595, 0, -5.40973, -1.38595, 0, 5.40973, -2.92696, 0, 26.7756, 4.41615, 0, -5.23954, -4.41615, 0, 5.23954, -19.4756, 0, 55.67, 5.11638, 0, -2.00072, -5.11638, 0, 2.00072, -38.651, 0, 69.3292, 9.46289, 0, 3.60492, -9.46289, 0, -3.60492, -86.4817, 0, 69.5815, 3.2682, 0, 6.99522, -3.2682, 0, -6.99522, -104.845, 0, 45.6883, 1.60216, 0, 4.3797, -1.60216, 0, -4.3797, -124.809, 0, 10.227, -0.393677, 0, 16.7433, 0.393677, 0, -16.7433, -132.952, 0, -30.7506, 0, 0, 0, 0, 0, 0, -115.878, 0, -60.1703, -5.95848, 0, 3.11747, 5.95848, 0, -3.11747, -89.0848, 0, -77.507, -7.21057, 0, 3.14577, 7.21057, 0, -3.14577, -54.938, 0, -93.5321, -6.13807, 0, 0.321625, 6.13807, 0, -0.321625, -22.8904, 0, -102.199, -6.36373, 0, -0.692802, 6.36373, 0, 0.692802, 30.9583, 0, -102.987, -14.1609, 0, -5.83204, 14.1609, 0, 5.83204, 104.77, 0, -95.369, -2.84078, 0, -7.54234, 2.84078, 0, 7.54234, 129.725, 0, -70.6774, 0.577271, 0, -5.77762, -0.577271, 0, 5.77762, 131.038, 0, -16.566, 4.09979, 0, -5.48991, -4.09979, 0, 5.48991, 120.531, 0, 19.4206, 13.5805, 0, -0.223301, -13.5805, 0, 0.223301, 91.8993, 0, 33.0798, 9.46288, 0, 12.3919, -9.46288, 0, -12.3919, 64.2486, 0, 19.7887, 0.9328, 0, 3.78867, -0.9328, 0, -3.78867, 47.7696, 0, -29.9625, 4.45644, 0, 4.85062, -4.45644, 0, -4.85062, 38.8386, 0, -69.1013, 12.0632, 0, -0.862228, -12.0632, 0, 0.862228, 15.4604, 0, -76.4563, 0.599008, 0, -3.14288, -0.599008, 0, 3.14288, -0.562871, 0, -62.0091, 0, 0, 0, 0, 0, 0, -0.825541, 0, -27.8611, 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036 ),
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036, 1.38595, 0, -5.40973, -1.38595, 0, 5.40973, -2.92696, 0, 26.7756, 4.41615, 0, -5.23954, -4.41615, 0, 5.23954, -19.4756, 0, 55.67, 5.11638, 0, -2.00072, -5.11638, 0, 2.00072, -38.651, 0, 69.3292, 9.46289, 0, 3.60492, -9.46289, 0, -3.60492, -86.4817, 0, 69.5815, 3.2682, 0, 6.99522, -3.2682, 0, -6.99522, -104.845, 0, 45.6883, 1.60216, 0, 4.3797, -1.60216, 0, -4.3797, -124.809, 0, 10.227, -0.393677, 0, 16.7433, 0.393677, 0, -16.7433, -132.952, 0, -30.7506, 0, 0, 0, 0, 0, 0, -115.878, 0, -60.1703, -5.95848, 0, 3.11747, 5.95848, 0, -3.11747, -89.0848, 0, -77.507, -7.21057, 0, 3.14577, 7.21057, 0, -3.14577, -54.938, 0, -93.5321, -6.13807, 0, 0.321625, 6.13807, 0, -0.321625, -22.8904, 0, -102.199, -6.36373, 0, -0.692802, 6.36373, 0, 0.692802, 30.9583, 0, -102.987, -14.1609, 0, -5.83204, 14.1609, 0, 5.83204, 104.77, 0, -95.369, -2.84078, 0, -7.54234, 2.84078, 0, 7.54234, 129.725, 0, -70.6774, 0.577271, 0, -5.77762, -0.577271, 0, 5.77762, 131.038, 0, -16.566, 4.09979, 0, -5.48991, -4.09979, 0, 5.48991, 120.625, 1.8722, 19.4246, 13.5805, 0, -0.223301, -13.5805, 0, 0.223301, 91.8993, 0, 33.0798, 9.46288, 0, 12.3919, -9.46288, 0, -12.3919, 64.7076, 1.98119, 19.4936, 0.9328, 0, 3.78867, -0.9328, 0, -3.78867, 48.0141, 1.19353, -29.8267, 4.45644, 0, 4.85062, -4.45644, 0, -4.85062, 38.8386, 0, -69.1013, 12.0632, 0, -0.862228, -12.0632, 0, 0.862228, 15.4604, 0, -76.4563, 0.599008, 0, -3.14288, -0.599008, 0, 3.14288, -0.562871, 0, -62.0091, 0, 0, 0, 0, 0, 0, -0.825541, 0, -27.8611, 0, 0, 0, 0, 0, 0, 0.0458727, 0, 5.00036 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
 }
 
-[sub_resource type="CylinderMesh" id=5]
+[sub_resource type="CylinderMesh" id=2]
 top_radius = 0.5
 bottom_radius = 0.5
 height = 0.3
 
-[sub_resource type="BoxShape" id=6]
+[sub_resource type="BoxShape" id=3]
 extents = Vector3( 2.07, 0.29, 4 )
 
-[sub_resource type="SpatialMaterial" id=7]
+[sub_resource type="SpatialMaterial" id=4]
 albedo_color = Color( 0.439216, 0.439216, 0.439216, 1 )
 
-[sub_resource type="CubeMesh" id=8]
-material = SubResource( 7 )
+[sub_resource type="CubeMesh" id=5]
+material = SubResource( 4 )
 size = Vector3( 3.4, 0.5, 8 )
 
 [node name="World" type="Spatial"]
 
-[node name="Ground" type="MeshInstance" parent="."]
-editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.01, 0 )
-visible = false
-mesh = SubResource( 2 )
-material/0 = null
-
-[node name="StaticBody" type="StaticBody" parent="Ground"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
-shape = SubResource( 3 )
-
 [node name="Track" type="Spatial" parent="."]
-visible = false
 
 [node name="Path" type="Path" parent="Track"]
-curve = SubResource( 4 )
+curve = SubResource( 1 )
 
 [node name="CSGPolygon" type="CSGPolygon" parent="Track"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0330029, -0.0303845, -0.0188608 )
 use_collision = true
 invert_faces = true
 polygon = PoolVector2Array( 10, 0, -10, 0, -10, -0.5, 10, -0.5 )
 mode = 2
 path_node = NodePath("../Path")
-path_interval = 2.199
+path_interval = 6.583
 path_rotation = 2
 path_local = false
 path_continuous_u = false
 path_joined = true
-smooth_faces = true
 
 [node name="Camera2" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 150, -20 )
 current = true
 far = 200.0
 script = ExtResource( 1 )
-follow_this_path = NodePath("../Spatial/Car")
-target_distance = 10.0
 
-[node name="Spatial" type="Spatial" parent="."]
+[node name="Car" type="Spatial" parent="."]
+visible = false
 
-[node name="Car" type="VehicleBody" parent="Spatial"]
+[node name="Car" type="VehicleBody" parent="Car"]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.269461, 0 )
 mass = 58.1633
 angular_damp = 0.0
 script = ExtResource( 2 )
 MAX_STEER_ANGLE = 0.4
 
-[node name="front_left" type="VehicleWheel" parent="Spatial/Car"]
+[node name="front_left" type="VehicleWheel" parent="Car/Car"]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.817685, 3 )
 use_as_steering = true
 wheel_roll_influence = 0.5
@@ -99,12 +137,12 @@ suspension_max_force = 2000.0
 damping_compression = 0.8
 damping_relaxation = 0.8
 
-[node name="MeshInstance" type="MeshInstance" parent="Spatial/Car/front_left"]
+[node name="MeshInstance" type="MeshInstance" parent="Car/Car/front_left"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
-mesh = SubResource( 5 )
+mesh = SubResource( 2 )
 material/0 = null
 
-[node name="front_right" type="VehicleWheel" parent="Spatial/Car"]
+[node name="front_right" type="VehicleWheel" parent="Car/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.817685, 3 )
 use_as_steering = true
@@ -118,12 +156,12 @@ suspension_max_force = 2000.0
 damping_compression = 0.8
 damping_relaxation = 0.8
 
-[node name="MeshInstance2" type="MeshInstance" parent="Spatial/Car/front_right"]
+[node name="MeshInstance2" type="MeshInstance" parent="Car/Car/front_right"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
-mesh = SubResource( 5 )
+mesh = SubResource( 2 )
 material/0 = null
 
-[node name="rear_left" type="VehicleWheel" parent="Spatial/Car"]
+[node name="rear_left" type="VehicleWheel" parent="Car/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.817685, -3 )
 use_as_traction = true
@@ -137,12 +175,12 @@ suspension_max_force = 2000.0
 damping_compression = 0.6
 damping_relaxation = 0.6
 
-[node name="MeshInstance3" type="MeshInstance" parent="Spatial/Car/rear_left"]
+[node name="MeshInstance3" type="MeshInstance" parent="Car/Car/rear_left"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
-mesh = SubResource( 5 )
+mesh = SubResource( 2 )
 material/0 = null
 
-[node name="rear_right" type="VehicleWheel" parent="Spatial/Car"]
+[node name="rear_right" type="VehicleWheel" parent="Car/Car"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.817685, -3 )
 use_as_traction = true
@@ -156,20 +194,30 @@ suspension_max_force = 2000.0
 damping_compression = 0.6
 damping_relaxation = 0.6
 
-[node name="MeshInstance4" type="MeshInstance" parent="Spatial/Car/rear_right"]
+[node name="MeshInstance4" type="MeshInstance" parent="Car/Car/rear_right"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Car/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.302, 0 )
+shape = SubResource( 3 )
+
+[node name="Camera" type="Camera" parent="Car/Car"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.528, -7.377 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Car/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24396, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Spatial/Car"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.302, 0 )
-shape = SubResource( 6 )
+[node name="Generator" type="Spatial" parent="."]
+script = ExtResource( 3 )
+tiles = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
 
-[node name="Camera" type="Camera" parent="Spatial/Car"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.528, -7.377 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Spatial/Car"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24396, 0 )
-mesh = SubResource( 8 )
+[node name="roadTile_001" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.672878, 18.9672, 8.74373 )
+mesh = ExtResource( 4 )
 material/0 = null
+script = ExtResource( 64 )
 
