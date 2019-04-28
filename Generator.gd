@@ -1,4 +1,4 @@
-tool
+
 extends Spatial
 
 export(Array, Mesh) var tiles

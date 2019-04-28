@@ -2,32 +2,36 @@
 
 [ext_resource path="res://Models/roadTile_021.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="World" id=1]
+[sub_resource type="Environment" id=1]
+ambient_light_color = Color( 1, 1, 1, 0.121569 )
+ambient_light_energy = 0.62
 
 [node name="VBoxContainer" type="VBoxContainer"]
 margin_right = 200.0
 margin_bottom = 218.0
 
-[node name="Label" type="Label" parent="."]
-margin_right = 200.0
-margin_bottom = 14.0
-text = "Tile1"
-
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-margin_top = 18.0
 margin_right = 200.0
-margin_bottom = 218.0
+margin_bottom = 200.0
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
-size = Vector2( 200, 200 )
-world = SubResource( 1 )
+size = Vector2( 100, 100 )
+own_world = true
+transparent_bg = true
 handle_input_locally = false
-render_target_update_mode = 3
+hdr = false
+render_target_clear_mode = 1
+render_target_update_mode = 1
 
 [node name="Camera" type="Camera" parent="ViewportContainer/Viewport"]
+transform = Transform( 0.707107, -0.40558, 0.579228, 0, 0.819152, 0.573577, -0.707107, -0.40558, 0.579228, 4, 4, 4 )
+environment = SubResource( 1 )
 current = true
 
 [node name="MeshInstance" type="MeshInstance" parent="ViewportContainer/Viewport"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.40773, -0.13864, -6.52968 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 1.5 )
 mesh = ExtResource( 1 )
 material/0 = null
+
+[node name="DirectionalLight" type="DirectionalLight" parent="ViewportContainer/Viewport"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0 )
