@@ -23,6 +23,20 @@ func _ready():
 		var mi = list_tile.find_node("MeshInstance", true)
 		mi.mesh = child.mesh
 		get_node(vbox).add_child(list_tile)
+		
+	yield(get_tree(), "idle_frame")
+	yield(get_tree(), "idle_frame")
+	
+	for list_tile in get_node(vbox).get_children():
+		var viewport_image = list_tile.find_node("Viewport", true).get_texture().get_data()
+		var img = Image.new()
+		var itex = ImageTexture.new()
+		img.copy_from(viewport_image)
+		img.flip_y()
+		itex.create_from_image(img)
+	
+		list_tile.find_node("TextureRect", true).texture = itex
+		list_tile.find_node("Viewport", true).queue_free()
 
 
 func _input(event):
