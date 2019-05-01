@@ -1,0 +1,2225 @@
+[gd_scene load_steps=305 format=2]
+
+[ext_resource path="res://Generator.gd" type="Script" id=1]
+[ext_resource path="res://Models/roadTile_001.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/roadTile_002.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/roadTile_003.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/roadTile_004.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Models/roadTile_005.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Models/roadTile_006.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Models/roadTile_007.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Models/roadTile_008.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Models/roadTile_009.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Models/roadTile_010.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Models/roadTile_011.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Models/roadTile_012.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Models/roadTile_013.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Models/roadTile_014.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Models/roadTile_015.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Models/roadTile_016.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Models/roadTile_017.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Models/roadTile_018.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Models/roadTile_019.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Models/roadTile_020.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Models/roadTile_021.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Models/roadTile_022.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Models/roadTile_023.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Models/roadTile_024.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Models/roadTile_025.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Models/roadTile_026.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Models/roadTile_027.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Models/roadTile_028.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Models/roadTile_029.obj" type="ArrayMesh" id=30]
+[ext_resource path="res://Models/roadTile_030.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Models/roadTile_031.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Models/roadTile_032.obj" type="ArrayMesh" id=33]
+[ext_resource path="res://Models/roadTile_033.obj" type="ArrayMesh" id=34]
+[ext_resource path="res://Models/roadTile_034.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Models/roadTile_035.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Models/roadTile_036.obj" type="ArrayMesh" id=37]
+[ext_resource path="res://Models/roadTile_037.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Models/roadTile_038.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Models/roadTile_039.obj" type="ArrayMesh" id=40]
+[ext_resource path="res://Models/roadTile_040.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Models/roadTile_041.obj" type="ArrayMesh" id=42]
+[ext_resource path="res://Models/roadTile_042.obj" type="ArrayMesh" id=43]
+[ext_resource path="res://Models/roadTile_043.obj" type="ArrayMesh" id=44]
+[ext_resource path="res://Models/roadTile_044.obj" type="ArrayMesh" id=45]
+[ext_resource path="res://Models/roadTile_045.obj" type="ArrayMesh" id=46]
+[ext_resource path="res://Models/roadTile_046.obj" type="ArrayMesh" id=47]
+[ext_resource path="res://Models/roadTile_047.obj" type="ArrayMesh" id=48]
+[ext_resource path="res://Models/roadTile_048.obj" type="ArrayMesh" id=49]
+[ext_resource path="res://Models/roadTile_049.obj" type="ArrayMesh" id=50]
+[ext_resource path="res://Models/roadTile_050.obj" type="ArrayMesh" id=51]
+[ext_resource path="res://Models/roadTile_051.obj" type="ArrayMesh" id=52]
+[ext_resource path="res://Models/roadTile_052.obj" type="ArrayMesh" id=53]
+[ext_resource path="res://Models/roadTile_053.obj" type="ArrayMesh" id=54]
+[ext_resource path="res://Models/roadTile_054.obj" type="ArrayMesh" id=55]
+[ext_resource path="res://Models/roadTile_055.obj" type="ArrayMesh" id=56]
+[ext_resource path="res://Models/roadTile_056.obj" type="ArrayMesh" id=57]
+[ext_resource path="res://Models/roadTile_057.obj" type="ArrayMesh" id=58]
+[ext_resource path="res://Models/roadTile_058.obj" type="ArrayMesh" id=59]
+[ext_resource path="res://Models/roadTile_059.obj" type="ArrayMesh" id=60]
+[ext_resource path="res://Models/roadTile_060.obj" type="ArrayMesh" id=61]
+[ext_resource path="res://Models/roadTile_061.obj" type="ArrayMesh" id=62]
+[ext_resource path="res://Models/roadTile_062.obj" type="ArrayMesh" id=63]
+[ext_resource path="res://Models/roadTile_063.obj" type="ArrayMesh" id=64]
+[ext_resource path="res://Models/roadTile_064.obj" type="ArrayMesh" id=65]
+[ext_resource path="res://Models/roadTile_065.obj" type="ArrayMesh" id=66]
+[ext_resource path="res://Models/roadTile_066.obj" type="ArrayMesh" id=67]
+[ext_resource path="res://Models/roadTile_067.obj" type="ArrayMesh" id=68]
+[ext_resource path="res://Models/roadTile_068.obj" type="ArrayMesh" id=69]
+[ext_resource path="res://Models/roadTile_069.obj" type="ArrayMesh" id=70]
+[ext_resource path="res://Models/roadTile_070.obj" type="ArrayMesh" id=71]
+[ext_resource path="res://Models/roadTile_071.obj" type="ArrayMesh" id=72]
+[ext_resource path="res://Models/roadTile_072.obj" type="ArrayMesh" id=73]
+[ext_resource path="res://Models/roadTile_073.obj" type="ArrayMesh" id=74]
+[ext_resource path="res://Models/roadTile_074.obj" type="ArrayMesh" id=75]
+[ext_resource path="res://Models/roadTile_075.obj" type="ArrayMesh" id=76]
+[ext_resource path="res://Models/roadTile_076.obj" type="ArrayMesh" id=77]
+[ext_resource path="res://Models/roadTile_077.obj" type="ArrayMesh" id=78]
+[ext_resource path="res://Models/roadTile_078.obj" type="ArrayMesh" id=79]
+[ext_resource path="res://Models/roadTile_079.obj" type="ArrayMesh" id=80]
+[ext_resource path="res://Models/roadTile_080.obj" type="ArrayMesh" id=81]
+[ext_resource path="res://Models/roadTile_081.obj" type="ArrayMesh" id=82]
+[ext_resource path="res://Models/roadTile_082.obj" type="ArrayMesh" id=83]
+[ext_resource path="res://Models/roadTile_083.obj" type="ArrayMesh" id=84]
+[ext_resource path="res://Models/roadTile_084.obj" type="ArrayMesh" id=85]
+[ext_resource path="res://Models/roadTile_085.obj" type="ArrayMesh" id=86]
+[ext_resource path="res://Models/roadTile_086.obj" type="ArrayMesh" id=87]
+[ext_resource path="res://Models/roadTile_087.obj" type="ArrayMesh" id=88]
+[ext_resource path="res://Models/roadTile_088.obj" type="ArrayMesh" id=89]
+[ext_resource path="res://Models/roadTile_089.obj" type="ArrayMesh" id=90]
+[ext_resource path="res://Models/roadTile_090.obj" type="ArrayMesh" id=91]
+[ext_resource path="res://Models/roadTile_091.obj" type="ArrayMesh" id=92]
+[ext_resource path="res://Models/roadTile_092.obj" type="ArrayMesh" id=93]
+[ext_resource path="res://Models/roadTile_093.obj" type="ArrayMesh" id=94]
+[ext_resource path="res://Models/roadTile_094.obj" type="ArrayMesh" id=95]
+[ext_resource path="res://Models/roadTile_095.obj" type="ArrayMesh" id=96]
+[ext_resource path="res://Models/roadTile_096.obj" type="ArrayMesh" id=97]
+[ext_resource path="res://Models/roadTile_097.obj" type="ArrayMesh" id=98]
+[ext_resource path="res://Models/roadTile_098.obj" type="ArrayMesh" id=99]
+[ext_resource path="res://Models/roadTile_099.obj" type="ArrayMesh" id=100]
+[ext_resource path="res://Models/roadTile_100.obj" type="ArrayMesh" id=101]
+[ext_resource path="res://Models/roadTile_101.obj" type="ArrayMesh" id=102]
+[ext_resource path="res://Models/roadTile_102.obj" type="ArrayMesh" id=103]
+[ext_resource path="res://Models/roadTile_103.obj" type="ArrayMesh" id=104]
+[ext_resource path="res://Models/roadTile_104.obj" type="ArrayMesh" id=105]
+[ext_resource path="res://Models/roadTile_105.obj" type="ArrayMesh" id=106]
+[ext_resource path="res://Models/roadTile_106.obj" type="ArrayMesh" id=107]
+[ext_resource path="res://Models/roadTile_107.obj" type="ArrayMesh" id=108]
+[ext_resource path="res://Models/roadTile_108.obj" type="ArrayMesh" id=109]
+[ext_resource path="res://Models/roadTile_109.obj" type="ArrayMesh" id=110]
+[ext_resource path="res://Models/roadTile_110.obj" type="ArrayMesh" id=111]
+[ext_resource path="res://Models/roadTile_111.obj" type="ArrayMesh" id=112]
+[ext_resource path="res://Models/roadTile_112.obj" type="ArrayMesh" id=113]
+[ext_resource path="res://Models/roadTile_113.obj" type="ArrayMesh" id=114]
+[ext_resource path="res://Models/roadTile_114.obj" type="ArrayMesh" id=115]
+[ext_resource path="res://Models/roadTile_115.obj" type="ArrayMesh" id=116]
+[ext_resource path="res://Models/roadTile_116.obj" type="ArrayMesh" id=117]
+[ext_resource path="res://Models/roadTile_117.obj" type="ArrayMesh" id=118]
+[ext_resource path="res://Models/roadTile_118.obj" type="ArrayMesh" id=119]
+[ext_resource path="res://Models/roadTile_119.obj" type="ArrayMesh" id=120]
+[ext_resource path="res://Models/roadTile_120.obj" type="ArrayMesh" id=121]
+[ext_resource path="res://Models/roadTile_121.obj" type="ArrayMesh" id=122]
+[ext_resource path="res://Models/roadTile_122.obj" type="ArrayMesh" id=123]
+[ext_resource path="res://Models/roadTile_123.obj" type="ArrayMesh" id=124]
+[ext_resource path="res://Models/roadTile_124.obj" type="ArrayMesh" id=125]
+[ext_resource path="res://Models/roadTile_125.obj" type="ArrayMesh" id=126]
+[ext_resource path="res://Models/roadTile_126.obj" type="ArrayMesh" id=127]
+[ext_resource path="res://Models/roadTile_127.obj" type="ArrayMesh" id=128]
+[ext_resource path="res://Models/roadTile_128.obj" type="ArrayMesh" id=129]
+[ext_resource path="res://Models/roadTile_129.obj" type="ArrayMesh" id=130]
+[ext_resource path="res://Models/roadTile_130.obj" type="ArrayMesh" id=131]
+[ext_resource path="res://Models/roadTile_131.obj" type="ArrayMesh" id=132]
+[ext_resource path="res://Models/roadTile_132.obj" type="ArrayMesh" id=133]
+[ext_resource path="res://Models/roadTile_133.obj" type="ArrayMesh" id=134]
+[ext_resource path="res://Models/roadTile_134.obj" type="ArrayMesh" id=135]
+[ext_resource path="res://Models/roadTile_135.obj" type="ArrayMesh" id=136]
+[ext_resource path="res://Models/roadTile_136.obj" type="ArrayMesh" id=137]
+[ext_resource path="res://Models/roadTile_137.obj" type="ArrayMesh" id=138]
+[ext_resource path="res://Models/roadTile_138.obj" type="ArrayMesh" id=139]
+[ext_resource path="res://Models/roadTile_139.obj" type="ArrayMesh" id=140]
+[ext_resource path="res://Models/roadTile_140.obj" type="ArrayMesh" id=141]
+[ext_resource path="res://Models/roadTile_141.obj" type="ArrayMesh" id=142]
+[ext_resource path="res://Models/roadTile_142.obj" type="ArrayMesh" id=143]
+[ext_resource path="res://Models/roadTile_143.obj" type="ArrayMesh" id=144]
+[ext_resource path="res://Models/roadTile_144.obj" type="ArrayMesh" id=145]
+[ext_resource path="res://Models/roadTile_145.obj" type="ArrayMesh" id=146]
+[ext_resource path="res://Models/roadTile_146.obj" type="ArrayMesh" id=147]
+[ext_resource path="res://Models/roadTile_147.obj" type="ArrayMesh" id=148]
+[ext_resource path="res://Models/roadTile_148.obj" type="ArrayMesh" id=149]
+[ext_resource path="res://Models/roadTile_149.obj" type="ArrayMesh" id=150]
+[ext_resource path="res://Models/roadTile_150.obj" type="ArrayMesh" id=151]
+[ext_resource path="res://Models/roadTile_151.obj" type="ArrayMesh" id=152]
+[ext_resource path="res://Models/roadTile_152.obj" type="ArrayMesh" id=153]
+[ext_resource path="res://Models/roadTile_153.obj" type="ArrayMesh" id=154]
+[ext_resource path="res://Models/roadTile_154.obj" type="ArrayMesh" id=155]
+[ext_resource path="res://Models/roadTile_155.obj" type="ArrayMesh" id=156]
+[ext_resource path="res://Models/roadTile_156.obj" type="ArrayMesh" id=157]
+[ext_resource path="res://Models/roadTile_157.obj" type="ArrayMesh" id=158]
+[ext_resource path="res://Models/roadTile_158.obj" type="ArrayMesh" id=159]
+[ext_resource path="res://Models/roadTile_159.obj" type="ArrayMesh" id=160]
+[ext_resource path="res://Models/roadTile_160.obj" type="ArrayMesh" id=161]
+[ext_resource path="res://Models/roadTile_161.obj" type="ArrayMesh" id=162]
+[ext_resource path="res://Models/roadTile_162.obj" type="ArrayMesh" id=163]
+[ext_resource path="res://Models/roadTile_163.obj" type="ArrayMesh" id=164]
+[ext_resource path="res://Models/roadTile_164.obj" type="ArrayMesh" id=165]
+[ext_resource path="res://Models/roadTile_165.obj" type="ArrayMesh" id=166]
+[ext_resource path="res://Models/roadTile_166.obj" type="ArrayMesh" id=167]
+[ext_resource path="res://Models/roadTile_167.obj" type="ArrayMesh" id=168]
+[ext_resource path="res://Models/roadTile_168.obj" type="ArrayMesh" id=169]
+[ext_resource path="res://Models/roadTile_169.obj" type="ArrayMesh" id=170]
+[ext_resource path="res://Models/roadTile_170.obj" type="ArrayMesh" id=171]
+[ext_resource path="res://Models/roadTile_171.obj" type="ArrayMesh" id=172]
+[ext_resource path="res://Models/roadTile_172.obj" type="ArrayMesh" id=173]
+[ext_resource path="res://Models/roadTile_173.obj" type="ArrayMesh" id=174]
+[ext_resource path="res://Models/roadTile_174.obj" type="ArrayMesh" id=175]
+[ext_resource path="res://Models/roadTile_175.obj" type="ArrayMesh" id=176]
+[ext_resource path="res://Models/roadTile_176.obj" type="ArrayMesh" id=177]
+[ext_resource path="res://Models/roadTile_177.obj" type="ArrayMesh" id=178]
+[ext_resource path="res://Models/roadTile_178.obj" type="ArrayMesh" id=179]
+[ext_resource path="res://Models/roadTile_179.obj" type="ArrayMesh" id=180]
+[ext_resource path="res://Models/roadTile_180.obj" type="ArrayMesh" id=181]
+[ext_resource path="res://Models/roadTile_181.obj" type="ArrayMesh" id=182]
+[ext_resource path="res://Models/roadTile_182.obj" type="ArrayMesh" id=183]
+[ext_resource path="res://Models/roadTile_183.obj" type="ArrayMesh" id=184]
+[ext_resource path="res://Models/roadTile_184.obj" type="ArrayMesh" id=185]
+[ext_resource path="res://Models/roadTile_185.obj" type="ArrayMesh" id=186]
+[ext_resource path="res://Models/roadTile_186.obj" type="ArrayMesh" id=187]
+[ext_resource path="res://Models/roadTile_187.obj" type="ArrayMesh" id=188]
+[ext_resource path="res://Models/roadTile_188.obj" type="ArrayMesh" id=189]
+[ext_resource path="res://Models/roadTile_189.obj" type="ArrayMesh" id=190]
+[ext_resource path="res://Models/roadTile_190.obj" type="ArrayMesh" id=191]
+[ext_resource path="res://Models/roadTile_191.obj" type="ArrayMesh" id=192]
+[ext_resource path="res://Models/roadTile_192.obj" type="ArrayMesh" id=193]
+[ext_resource path="res://Models/roadTile_193.obj" type="ArrayMesh" id=194]
+[ext_resource path="res://Models/roadTile_194.obj" type="ArrayMesh" id=195]
+[ext_resource path="res://Models/roadTile_195.obj" type="ArrayMesh" id=196]
+[ext_resource path="res://Models/roadTile_196.obj" type="ArrayMesh" id=197]
+[ext_resource path="res://Models/roadTile_197.obj" type="ArrayMesh" id=198]
+[ext_resource path="res://Models/roadTile_198.obj" type="ArrayMesh" id=199]
+[ext_resource path="res://Models/roadTile_199.obj" type="ArrayMesh" id=200]
+[ext_resource path="res://Models/roadTile_200.obj" type="ArrayMesh" id=201]
+[ext_resource path="res://Models/roadTile_201.obj" type="ArrayMesh" id=202]
+[ext_resource path="res://Models/roadTile_202.obj" type="ArrayMesh" id=203]
+[ext_resource path="res://Models/roadTile_203.obj" type="ArrayMesh" id=204]
+[ext_resource path="res://Models/roadTile_204.obj" type="ArrayMesh" id=205]
+[ext_resource path="res://Models/roadTile_205.obj" type="ArrayMesh" id=206]
+[ext_resource path="res://Models/roadTile_206.obj" type="ArrayMesh" id=207]
+[ext_resource path="res://Models/roadTile_207.obj" type="ArrayMesh" id=208]
+[ext_resource path="res://Models/roadTile_208.obj" type="ArrayMesh" id=209]
+[ext_resource path="res://Models/roadTile_209.obj" type="ArrayMesh" id=210]
+[ext_resource path="res://Models/roadTile_210.obj" type="ArrayMesh" id=211]
+[ext_resource path="res://Models/roadTile_211.obj" type="ArrayMesh" id=212]
+[ext_resource path="res://Models/roadTile_212.obj" type="ArrayMesh" id=213]
+[ext_resource path="res://Models/roadTile_213.obj" type="ArrayMesh" id=214]
+[ext_resource path="res://Models/roadTile_214.obj" type="ArrayMesh" id=215]
+[ext_resource path="res://Models/roadTile_215.obj" type="ArrayMesh" id=216]
+[ext_resource path="res://Models/roadTile_216.obj" type="ArrayMesh" id=217]
+[ext_resource path="res://Models/roadTile_217.obj" type="ArrayMesh" id=218]
+[ext_resource path="res://Models/roadTile_218.obj" type="ArrayMesh" id=219]
+[ext_resource path="res://Models/roadTile_219.obj" type="ArrayMesh" id=220]
+[ext_resource path="res://Models/roadTile_220.obj" type="ArrayMesh" id=221]
+[ext_resource path="res://Models/roadTile_221.obj" type="ArrayMesh" id=222]
+[ext_resource path="res://Models/roadTile_222.obj" type="ArrayMesh" id=223]
+[ext_resource path="res://Models/roadTile_223.obj" type="ArrayMesh" id=224]
+[ext_resource path="res://Models/roadTile_224.obj" type="ArrayMesh" id=225]
+[ext_resource path="res://Models/roadTile_225.obj" type="ArrayMesh" id=226]
+[ext_resource path="res://Models/roadTile_226.obj" type="ArrayMesh" id=227]
+[ext_resource path="res://Models/roadTile_227.obj" type="ArrayMesh" id=228]
+[ext_resource path="res://Models/roadTile_228.obj" type="ArrayMesh" id=229]
+[ext_resource path="res://Models/roadTile_229.obj" type="ArrayMesh" id=230]
+[ext_resource path="res://Models/roadTile_230.obj" type="ArrayMesh" id=231]
+[ext_resource path="res://Models/roadTile_231.obj" type="ArrayMesh" id=232]
+[ext_resource path="res://Models/roadTile_232.obj" type="ArrayMesh" id=233]
+[ext_resource path="res://Models/roadTile_233.obj" type="ArrayMesh" id=234]
+[ext_resource path="res://Models/roadTile_234.obj" type="ArrayMesh" id=235]
+[ext_resource path="res://Models/roadTile_235.obj" type="ArrayMesh" id=236]
+[ext_resource path="res://Models/roadTile_236.obj" type="ArrayMesh" id=237]
+[ext_resource path="res://Models/roadTile_237.obj" type="ArrayMesh" id=238]
+[ext_resource path="res://Models/roadTile_238.obj" type="ArrayMesh" id=239]
+[ext_resource path="res://Models/roadTile_239.obj" type="ArrayMesh" id=240]
+[ext_resource path="res://Models/roadTile_240.obj" type="ArrayMesh" id=241]
+[ext_resource path="res://Models/roadTile_241.obj" type="ArrayMesh" id=242]
+[ext_resource path="res://Models/roadTile_242.obj" type="ArrayMesh" id=243]
+[ext_resource path="res://Models/roadTile_243.obj" type="ArrayMesh" id=244]
+[ext_resource path="res://Models/roadTile_244.obj" type="ArrayMesh" id=245]
+[ext_resource path="res://Models/roadTile_245.obj" type="ArrayMesh" id=246]
+[ext_resource path="res://Models/roadTile_246.obj" type="ArrayMesh" id=247]
+[ext_resource path="res://Models/roadTile_247.obj" type="ArrayMesh" id=248]
+[ext_resource path="res://Models/roadTile_248.obj" type="ArrayMesh" id=249]
+[ext_resource path="res://Models/roadTile_249.obj" type="ArrayMesh" id=250]
+[ext_resource path="res://Models/roadTile_250.obj" type="ArrayMesh" id=251]
+[ext_resource path="res://Models/roadTile_251.obj" type="ArrayMesh" id=252]
+[ext_resource path="res://Models/roadTile_252.obj" type="ArrayMesh" id=253]
+[ext_resource path="res://Models/roadTile_253.obj" type="ArrayMesh" id=254]
+[ext_resource path="res://Models/roadTile_254.obj" type="ArrayMesh" id=255]
+[ext_resource path="res://Models/roadTile_255.obj" type="ArrayMesh" id=256]
+[ext_resource path="res://Models/roadTile_256.obj" type="ArrayMesh" id=257]
+[ext_resource path="res://Models/roadTile_257.obj" type="ArrayMesh" id=258]
+[ext_resource path="res://Models/roadTile_258.obj" type="ArrayMesh" id=259]
+[ext_resource path="res://Models/roadTile_259.obj" type="ArrayMesh" id=260]
+[ext_resource path="res://Models/roadTile_260.obj" type="ArrayMesh" id=261]
+[ext_resource path="res://Models/roadTile_261.obj" type="ArrayMesh" id=262]
+[ext_resource path="res://Models/roadTile_262.obj" type="ArrayMesh" id=263]
+[ext_resource path="res://Models/roadTile_263.obj" type="ArrayMesh" id=264]
+[ext_resource path="res://Models/roadTile_264.obj" type="ArrayMesh" id=265]
+[ext_resource path="res://Models/roadTile_265.obj" type="ArrayMesh" id=266]
+[ext_resource path="res://Models/roadTile_266.obj" type="ArrayMesh" id=267]
+[ext_resource path="res://Models/roadTile_267.obj" type="ArrayMesh" id=268]
+[ext_resource path="res://Models/roadTile_268.obj" type="ArrayMesh" id=269]
+[ext_resource path="res://Models/roadTile_269.obj" type="ArrayMesh" id=270]
+[ext_resource path="res://Models/roadTile_270.obj" type="ArrayMesh" id=271]
+[ext_resource path="res://Models/roadTile_271.obj" type="ArrayMesh" id=272]
+[ext_resource path="res://Models/roadTile_272.obj" type="ArrayMesh" id=273]
+[ext_resource path="res://Models/roadTile_273.obj" type="ArrayMesh" id=274]
+[ext_resource path="res://Models/roadTile_274.obj" type="ArrayMesh" id=275]
+[ext_resource path="res://Models/roadTile_275.obj" type="ArrayMesh" id=276]
+[ext_resource path="res://Models/roadTile_276.obj" type="ArrayMesh" id=277]
+[ext_resource path="res://Models/roadTile_277.obj" type="ArrayMesh" id=278]
+[ext_resource path="res://Models/roadTile_278.obj" type="ArrayMesh" id=279]
+[ext_resource path="res://Models/roadTile_279.obj" type="ArrayMesh" id=280]
+[ext_resource path="res://Models/roadTile_280.obj" type="ArrayMesh" id=281]
+[ext_resource path="res://Models/roadTile_281.obj" type="ArrayMesh" id=282]
+[ext_resource path="res://Models/roadTile_282.obj" type="ArrayMesh" id=283]
+[ext_resource path="res://Models/roadTile_283.obj" type="ArrayMesh" id=284]
+[ext_resource path="res://Models/roadTile_284.obj" type="ArrayMesh" id=285]
+[ext_resource path="res://Models/roadTile_285.obj" type="ArrayMesh" id=286]
+[ext_resource path="res://Models/roadTile_286.obj" type="ArrayMesh" id=287]
+[ext_resource path="res://Models/roadTile_287.obj" type="ArrayMesh" id=288]
+[ext_resource path="res://Models/roadTile_288.obj" type="ArrayMesh" id=289]
+[ext_resource path="res://Models/roadTile_289.obj" type="ArrayMesh" id=290]
+[ext_resource path="res://Models/roadTile_290.obj" type="ArrayMesh" id=291]
+[ext_resource path="res://Models/roadTile_291.obj" type="ArrayMesh" id=292]
+[ext_resource path="res://Models/roadTile_292.obj" type="ArrayMesh" id=293]
+[ext_resource path="res://Models/roadTile_293.obj" type="ArrayMesh" id=294]
+[ext_resource path="res://Models/roadTile_294.obj" type="ArrayMesh" id=295]
+[ext_resource path="res://Models/roadTile_295.obj" type="ArrayMesh" id=296]
+[ext_resource path="res://Models/roadTile_296.obj" type="ArrayMesh" id=297]
+[ext_resource path="res://Models/roadTile_297.obj" type="ArrayMesh" id=298]
+[ext_resource path="res://Models/roadTile_298.obj" type="ArrayMesh" id=299]
+[ext_resource path="res://Models/roadTile_299.obj" type="ArrayMesh" id=300]
+[ext_resource path="res://Models/roadTile_300.obj" type="ArrayMesh" id=301]
+[ext_resource path="res://Models/roadTile_301.obj" type="ArrayMesh" id=302]
+[ext_resource path="res://Models/roadTile_302.obj" type="ArrayMesh" id=303]
+[ext_resource path="res://VBoxTile.tscn" type="PackedScene" id=304]
+
+[node name="Generator" type="Spatial"]
+script = ExtResource( 1 )
+tiles = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ), ExtResource( 303 ) ]
+vbox = NodePath("../GUI/ScrollContainer/GridContainer")
+gui_tile = ExtResource( 304 )
+
+[node name="roadTile_001" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="roadTile_002" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="roadTile_003" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="roadTile_004" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="roadTile_005" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="roadTile_006" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 7 )
+material/0 = null
+
+[node name="roadTile_007" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="roadTile_008" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="roadTile_009" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="roadTile_010" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="roadTile_011" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 12 )
+material/0 = null
+
+[node name="roadTile_012" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="roadTile_013" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_014" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_015" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_016" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_017" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_018" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_019" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_020" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 21 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_021" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 22 )
+material/0 = null
+
+[node name="roadTile_022" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_023" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_024" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 25 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_025" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 26 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_026" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 27 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_027" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 28 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_028" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 29 )
+material/0 = null
+
+[node name="roadTile_029" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 30 )
+material/0 = null
+
+[node name="roadTile_030" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 31 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_031" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 32 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_032" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 33 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_033" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 34 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_034" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 35 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_035" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_036" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 37 )
+material/0 = null
+
+[node name="roadTile_037" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 38 )
+material/0 = null
+
+[node name="roadTile_038" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 39 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_039" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 40 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_040" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 41 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_041" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 42 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_042" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 43 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_043" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 44 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_044" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 45 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_045" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 46 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_046" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 47 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_047" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 48 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_048" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 49 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_049" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 50 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_050" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 51 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_051" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 52 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_052" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 53 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_053" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 54 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_054" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 55 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_055" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 56 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_056" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 57 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_057" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 58 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_058" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 59 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_059" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 60 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_060" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 61 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_061" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 62 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_062" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 63 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_063" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 64 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_064" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 65 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_065" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 66 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_066" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 67 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_067" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 68 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_068" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 69 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_069" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 70 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_070" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 71 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_071" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 72 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_072" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 73 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_073" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 74 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_074" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 75 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_075" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 76 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_076" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 77 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_077" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 78 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_078" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 79 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_079" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 80 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_080" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 81 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_081" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 82 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_082" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 83 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_083" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 84 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_084" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 85 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_085" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 86 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_086" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 87 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_087" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 88 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_088" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 89 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_089" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 90 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_090" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 91 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_091" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 92 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_092" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 93 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_093" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 94 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_094" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 95 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_095" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 96 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_096" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 97 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_097" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 98 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_098" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 99 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_099" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 100 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_100" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 101 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_101" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 102 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_102" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 103 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_103" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 104 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_104" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 105 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_105" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 106 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_106" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 107 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_107" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 108 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_108" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 109 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_109" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 110 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_110" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 111 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_111" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 112 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_112" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 113 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_113" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 114 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_114" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 115 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_115" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 116 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_116" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 117 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_117" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 118 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_118" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 119 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_119" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 120 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_120" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 121 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_121" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 122 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_122" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 123 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_123" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 124 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_124" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 125 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_125" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 126 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_126" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 127 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_127" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 128 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_128" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 129 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_129" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 130 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_130" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 131 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_131" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 132 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_132" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 133 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_133" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 134 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_134" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 135 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_135" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 136 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_136" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 137 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_137" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 138 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_138" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 139 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_139" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 140 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_140" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 141 )
+material/0 = null
+
+[node name="roadTile_141" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 142 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_142" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 143 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_143" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 144 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_144" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 145 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_145" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 146 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_146" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 147 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_147" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 148 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_148" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 149 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_149" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 150 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_150" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 151 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_151" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 152 )
+material/0 = null
+
+[node name="roadTile_152" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 153 )
+material/0 = null
+
+[node name="roadTile_153" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 154 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_154" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 155 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_155" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 156 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_156" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 157 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_157" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 158 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_158" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 159 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_159" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 160 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_160" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 161 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_161" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 162 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_162" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 163 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_163" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 164 )
+material/0 = null
+
+[node name="roadTile_164" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 165 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_165" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 166 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_166" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 167 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_167" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 168 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_168" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 169 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_169" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 170 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_170" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 171 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_171" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 172 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_172" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 173 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_173" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 174 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_174" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 175 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_175" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 176 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_176" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 177 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_177" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 178 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_178" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 179 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_179" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 180 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_180" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 181 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_181" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 182 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_182" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 183 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_183" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 184 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_184" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 185 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_185" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 186 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_186" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 187 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_187" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 188 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_188" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 189 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_189" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 190 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_190" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 191 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_191" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 192 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_192" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 193 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_193" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 194 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_194" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 195 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_195" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 196 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_196" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 197 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_197" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 198 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_198" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 199 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_199" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 200 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_200" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 201 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_201" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 202 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_202" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 203 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_203" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 204 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_204" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 205 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_205" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 206 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_206" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 207 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_207" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 208 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_208" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 209 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_209" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 210 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_210" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 211 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_211" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 212 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_212" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 213 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_213" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 214 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_214" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 215 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_215" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 216 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_216" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 217 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_217" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 218 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_218" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 219 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_219" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 220 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_220" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 221 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_221" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 222 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_222" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 223 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_223" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 224 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_224" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 225 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_225" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 226 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_226" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 227 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_227" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 228 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_228" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 229 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_229" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 230 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_230" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 231 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_231" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 232 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_232" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 233 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_233" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 234 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_234" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 235 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_235" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 236 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_236" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 237 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_237" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 238 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_238" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 239 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_239" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 240 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_240" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 241 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_241" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 242 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_242" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 243 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_243" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 244 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_244" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 245 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_245" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 246 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_246" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 247 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_247" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 248 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_248" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 249 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_249" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 250 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_250" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 251 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_251" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 252 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_252" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 253 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_253" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 254 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_254" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 255 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_255" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 256 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_256" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 257 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_257" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 258 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_258" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 259 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_259" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 260 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_260" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 261 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_261" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 262 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_262" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 263 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_263" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 264 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_264" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 265 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_265" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 266 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_266" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 267 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_267" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 268 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_268" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 269 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_269" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 270 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_270" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 271 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_271" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 272 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_272" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 273 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_273" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 274 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="roadTile_274" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 275 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_275" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 276 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_276" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 277 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_277" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 278 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_278" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 279 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_279" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 280 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_280" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 281 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_281" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 282 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_282" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 283 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_283" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 284 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_284" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 285 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roadTile_285" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 286 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_286" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 287 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_287" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 288 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_288" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 289 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_289" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 290 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_290" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 291 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_291" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 292 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_292" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 293 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_293" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 294 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_294" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 295 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_295" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 296 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_296" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 297 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_297" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 298 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_298" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 299 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_299" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 300 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_300" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 301 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_301" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 302 )
+material/0 = null
+material/1 = null
+
+[node name="roadTile_302" type="MeshInstance" parent="."]
+visible = false
+mesh = ExtResource( 303 )
+material/0 = null
+material/1 = null

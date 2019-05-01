@@ -2,25 +2,25 @@
 
 [ext_resource path="res://Models/roadTile_021.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="ImageTexture" id=3]
-size = Vector2( 100, 100 )
+[sub_resource type="ImageTexture" id=1]
+size = Vector2( 50, 50 )
 
 [sub_resource type="Environment" id=2]
 ambient_light_color = Color( 1, 1, 1, 0.121569 )
 ambient_light_energy = 0.62
 
 [node name="VBoxContainer" type="VBoxContainer"]
-margin_right = 120.0
-margin_bottom = 120.0
+margin_right = 50.0
+margin_bottom = 50.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 120.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 100, 100 )
-texture = SubResource( 3 )
+margin_right = 50.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+texture = SubResource( 1 )
 
 [node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 100, 100 )
+size = Vector2( 50, 50 )
 own_world = true
 transparent_bg = true
 handle_input_locally = false
