@@ -1,33 +1,38 @@
 extends Camera
 
-export (NodePath) var follow_this_path = null
+export (NodePath) var target_object = null
 export var target_distance = 3.0
 export var target_height = 2.0
+export var move_speed = 20.0
 
-var follow_this = null
+var target_node = null
 var last_lookat
 
 func _ready():
-	follow_this = get_node(follow_this_path)
-	last_lookat = follow_this.global_transform.origin
+	target_node = get_node(target_object)
+	last_lookat = target_node.global_transform.origin
 	
 
 func _physics_process(delta):
-	var delta_v = global_transform.origin - follow_this.global_transform.origin
-	var target_pos = global_transform.origin
+	var target_pos = global_transform.origin	
+	var target_vector = global_transform.origin - target_node.global_transform.origin
 	
 	# ignore y
-	delta_v.y = 0.0
+	target_vector.y = 0.0
 	
-	if (delta_v.length() > target_distance):
-		delta_v = delta_v.normalized() * target_distance
-		delta_v.y = target_height
-		target_pos = follow_this.global_transform.origin + delta_v
+	if (target_vector.length() > target_distance):
+		# limit vector to targe_distance
+		target_vector = target_vector.normalized() * target_distance
+		target_vector.y = target_height
+		# set target pos to target_distance behind target
+		target_pos = target_node.global_transform.origin + target_vector
 	else:
-		target_pos.y = follow_this.global_transform.origin.y + target_height
+		# only update height
+		target_pos.y = target_node.global_transform.origin.y + target_height
 	
-	global_transform.origin = global_transform.origin.linear_interpolate(target_pos, delta * 20.0)
+	# interpolate to target pos
+	global_transform.origin = global_transform.origin.linear_interpolate(target_pos, delta * move_speed)
 	
-	last_lookat = last_lookat.linear_interpolate(follow_this.global_transform.origin, delta * 20.0)
-	
-	look_at(last_lookat, Vector3(0.0, 1.0, 0.0))
+	# interpolate look at to target
+	last_lookat = last_lookat.linear_interpolate(target_node.global_transform.origin, delta * move_speed)
+	look_at(last_lookat, Vector3.UP)
